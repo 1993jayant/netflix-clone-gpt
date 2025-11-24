@@ -1,14 +1,24 @@
-import './App.css'
+import { createBrowserRouter, RouterProvider } from "react-router"
+import Home from "./components/Home"
+import Layout from "./components/Layout"
 
 function App() {
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />
+        }
+      ]
+    }
+  ])
+
   return (
-    <>
-      <div className='text-2xl font-bold text-red-400'>
-        hi there, how are you?
-      </div>
-        
-    </>
+    <RouterProvider router={router} />
   )
 }
 
