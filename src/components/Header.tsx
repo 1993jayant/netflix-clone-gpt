@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='absolute container top-0 w-full flex items-center justify-between py-6 px-37 bg-linear-to-b from-black/90 to-black/5 z-100'>
+    <div className='absolute top-0 w-full flex items-center justify-between py-6 px-37 bg-linear-to-b from-black/90 to-black/5 z-100'>
       <div className='w-37'>
         <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" className='fill-red-600'>
           <g>
@@ -11,7 +11,7 @@ const Header = () => {
         </svg>
       </div>
 
-      <div className='p-1.5 px-4 font-bold text-sm text-white bg-red-600 rounded-sm'>
+      <div className='p-1.5 px-4 font-bold text-sm text-white bg-red-600 rounded-sm cursor-pointer'>
         Sign in
       </div>
     </div>
